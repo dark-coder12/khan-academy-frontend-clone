@@ -1,0 +1,339 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin:0px;
+    padding:0px;
+    font-family: 'Lato', 'Noto Sans', 'Helvetica', 'Corbel', sans-serif, 'Helvetica', 'Corbel', sans-serif;
+}
+main{
+    flex-grow: 10;
+    background-color:#f7f8fa;
+    position: relative;
+}
+.navv{
+    background-color: rgb(11, 33, 73);
+    color: white;
+}
+.alt-nav{
+    width: 100vw;
+    align-items: center;
+    background-color: rgb(11, 33, 73);
+    color:white;
+    padding-left: 10px;
+    width: 100%;
+    display: none;
+    background-color: rgb(11, 33, 73);
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index:5;
+    padding-top:1rem;
+    font-size: medium;
+    padding-left: 10vw;
+}
+.alt-navflex{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+.main-nav{
+    background-color: rgb(11, 33, 73);
+    color: white;
+    font-weight:600;
+    font-family: inherit !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font: inherit;
+    font-style: inherit;
+    font-variant-caps: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    font-weight: bold;
+}
+.main-nav:hover {
+    background-color: white;
+    color: rgba(24,101,242,255);
+}
+.main-nav:hover a{
+    color: rgba(24,101,242,255);
+}
+.main-nav:hover .search{
+    background-color: white;
+    color: rgba(24,101,242,255);
+}
+.main-nav:hover .KA{
+    color: rgba(10,42,102,255);
+}
+.main-nav:hover .inp{
+    background-color: white;
+    color: rgba(10,42,102,255);
+}
+.second-nav{
+    padding-left: 10vw;
+    background-color: rgb(11, 33, 73);
+    color: white;
+}
+.navbtns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0px 10px;
+}
+.KA{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+}
+.logo_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2px;
+    margin-left:5px;
+}
+.course-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.inp{
+    background-color:rgba(31,51,88,255);
+    border: none;
+    color:white;
+    font: inherit !important;
+}
+.inp:focus {
+    outline: none;
+}
+.search{
+    background-color: rgba(31,51,88,255);
+    color: white;
+    margin:1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    height: fit-content;
+    width: 10vw;
+    padding: 0.5rem;
+    padding-right: 2rem;
+}
+.gradebox{
+    background-color:white;
+}
+.hr-w{
+    border: 0.01px solid white;
+    opacity: 10%;
+}
+.math{
+    color: rgba(166,174,189,255);
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.math-header{
+    margin-top: 5px;
+}
+.math2{
+    font-weight: bold;
+    color: rgba(166,174,189,255);
+}
+.main{
+    background-color: #f7f8fa;
+}
+.gradebox{
+    border: 1px solid #444444;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    border-color: #adadad;
+}
+.gradeheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.gradecontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.half-width{
+    width: 50%;
+    box-sizing: border-box;
+}
+.half-width2{
+    margin-left: 1.5rem;
+    width: 40%;
+    box-sizing: border-box;
+}
+.full-width{
+    margin-left: 0.5rem;
+    width: 90%;
+    box-sizing: border-box;
+}
+main{
+    position: relative;
+}
+.course-summary{
+    float: left;
+    width:30%;
+    box-sizing: border-box;
+    font-size: small;
+    margin-top: 1rem;
+    position: sticky;
+    overflow: hidden;
+    top: 15%;
+    padding-left: 10vw !important;
+    margin-right: 1rem;
+}
+.grades{
+    float: left;
+    width: 55%;
+    margin-right: 1rem;
+    box-sizing: border-box;
+    font-size: small;
+    color:#444444;
+}
+.rounded{
+    border-radius: 50px;
+}
+.wrap{
+    display: block;
+    max-width: 98%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+.subbreak{
+    height: 1px;
+    border: none;
+    opacity: 40%;
+    width: 100%;
+    background-color: #444444 !important;
+}
+.code-block {
+    height: 70vh;
+    overflow: auto;
+    padding: 8px 7px 5px 15px;
+    border-radius: 7px;
+}
+::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0.5);
+}
+.nowrap{
+    white-space:nowrap;
+}
+.cs-content{
+    line-height: 2rem;
+    color:#3b3e45;
+}
+.cs-header{
+    color: #444444;
+    font-size: large;
+    line-height: 0rem;
+}
+footer{
+    background-color: rgb(11, 33, 73);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 12px !important;
+    line-height: 14px !important;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5vw;
+}
+.mission-st{
+    font-size: large;
+    width: 28vw;
+    font-family: inherit !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    margin-right: 1rem;
+}
+.bl-color{
+    color: #6c80a5;
+}
+a{
+    color:white;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap:0.3rem;
+    margin-top: 0px;
+}
+.d-down{
+    border: none;
+    color:white;
+    background-color:rgb(11, 33, 73);
+    font-size: smaller;
+    font-weight: bold;
+}
+.icon{
+    width: 10px;
+    height: 10px;
+}
+.row3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap:0.5rem;
+}
+.us, .mexico, .brazil, .india{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.3rem;
+    font-weight: bold;
+}
+.language, .country{
+    margin:0px;
+    padding:0px;
+}
+.footer-break{
+    color: white;
+}
+.row5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: inherit !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
+}
+.left-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap:0.5rem;
+}
